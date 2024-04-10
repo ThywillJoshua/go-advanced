@@ -13,11 +13,11 @@ const (
 )
 
 const (
-	Admin      = 10
-	Manager    = 20
-	Contractor = 30
-	Member     = 40
-	Guest      = 50
+	Admin      = (iota + 1) * 10 // 10
+	Manager                      // 20
+	Contractor                   // 30
+	Member                       // 40
+	Guest                        // 50
 )
 
 func accessGranted() {
